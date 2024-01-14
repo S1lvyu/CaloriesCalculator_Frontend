@@ -1,0 +1,152 @@
+@import "../stylesVar/stylesVar.module.css";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670px;
+  height: 574px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  z-index: 7;
+}
+.close__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: var(--black-color);
+  font-size: var(--font-size26);
+}
+
+.close__button:hover {
+  color: black;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.title {
+  color: black;
+  text-align: center;
+  width: 508px;
+  font-size: var(--font-size26);
+  font-style: normal;
+  font-weight: var(--font-weight700);
+  margin-top: 64px;
+  margin-left: 82px;
+}
+
+.calories {
+  color: var(--navy-blue);
+  margin-top: 20px;
+  text-align: center;
+  width: 330px;
+  font-size: 48px;
+  margin-left: 171px;
+  font-weight: var(--font-weight700);
+  border-bottom: 2px solid var(--gray-color);
+  padding-bottom: 32px;
+}
+.calories__span {
+  font-size: 20px;
+}
+
+.second__title {
+  color: var(--black-color);
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight700);
+  margin-top: 12px;
+  margin-left: 171px;
+}
+
+.notrecommended__list {
+  margin-left: 190px;
+}
+
+.list__element {
+  color: var(--gray-color);
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight400);
+  padding-top: 20px;
+}
+
+.modal__button {
+  width: 182px;
+  height: 44px;
+  border: 2px solid var(--orange-color);
+  border-radius: 30px;
+  background-color: var(--orange-color);
+
+  font-size: var(--font-size14);
+
+  font-weight: var(--font-weight700);
+  color: var(--white-color);
+  box-shadow: 0px 4px 10px 0px rgba(252, 132, 45, 0.5);
+  margin-top: 40px;
+  margin-left: 231px;
+}
+.mobile__close__btn {
+  display: none;
+}
+.modal__button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 320px) {
+  .modal {
+    top: 45%;
+    max-width: 320px;
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .title {
+    width: 280px;
+    font-size: 18px;
+    margin: 40px auto;
+  }
+  .calories {
+    margin: 0 auto;
+  }
+  .second__title {
+    width: 280px;
+    margin: 20px auto;
+  }
+  .notrecommended__list {
+    margin-left: 40px;
+  }
+  .modal__button {
+    margin-left: 60px;
+  }
+  .overlay {
+    position: absolute;
+    height: 100vh;
+  }
+  .close__button {
+    display: none;
+  }
+  .mobile__close__btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 100vh;
+    height: 28px;
+    border: none;
+    background: #eff1f3;
+    text-align: left;
+    padding-left: 30px;
+    z-index: 6;
+  }
+}

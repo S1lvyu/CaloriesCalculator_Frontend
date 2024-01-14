@@ -1,0 +1,22 @@
+@import "../stylesVar/stylesVar.module.css";
+
+.button {
+  width: 182px;
+  height: 44px;
+  border: 2px solid var(--orange-color);
+  border-radius: 30px;
+  background-color: var(--white-color);
+  color: var(--orange-color);
+  font-size: var(--font-size14);
+
+  font-weight: var(--font-weight700);
+}
+.is_selected {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 10px 0px rgba(252, 132, 45, 0.5);
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}

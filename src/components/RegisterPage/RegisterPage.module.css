@@ -1,0 +1,62 @@
+@import "../stylesVar/stylesVar.module.css";
+.title {
+  color: var(--orange-color);
+
+  font-size: var(--font-size14);
+
+  font-weight: var(--font-weight700);
+
+  text-transform: uppercase;
+  margin-left: 36px;
+  margin-top: 160px;
+}
+.register__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin-left: 16px;
+  margin-top: 55px;
+}
+.register__input {
+  width: 240px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid var(--gray-color);
+  color: var(--gray-color);
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight700);
+  position: relative;
+}
+.register__input::-webkit-inner-spin-button,
+.register__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.register__input::placeholder {
+  color: var(--gray-color);
+  font-size: var(--font-size14);
+  font-weight: var(--font-weight700);
+}
+.register__input:focus {
+  outline: none;
+}
+.btn__container {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (max-width: 320px) {
+  .title {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .register__form {
+    max-width: 280px;
+  }
+  .btn__container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
